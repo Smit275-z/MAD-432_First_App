@@ -27,6 +27,8 @@ struct ContentView: View {
             Image("myPicture")
                 .resizable()
                 .aspectRatio(contentMode: .fit) // Maintains aspect ratio and fits the container
+//                .clipShape(Circle()) // Clips the image to a circular shape
+                .clipShape(RoundedRectangle(cornerRadius: 25)) // Alternative: Rounded rectangle shape
                 .frame(width: 250, height: 250)
             .padding()
         }
